@@ -46,15 +46,21 @@ public class Pin : MonoBehaviour
                 isFly = false;
                 transform.position = targetPosition;
                 transform.parent = circle;
-
+              
             }
 
         }
     }
 
+    private bool hasStartedFlay;
+
     public void Flay()
     {
+        if (hasStartedFlay)
+            return;
+        hasStartedFlay = true;
         isFly = true;
+        isReach = true;
         Debug.Log("flay--------");
     }
 }
