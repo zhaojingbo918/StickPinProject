@@ -350,7 +350,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4337539310273348, guid: 058d93db8699d124a8383a2981096b24, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1.42
+      value: 0.62
       objectReference: {fileID: 0}
     - target: {fileID: 4337539310273348, guid: 058d93db8699d124a8383a2981096b24, type: 2}
       propertyPath: m_LocalPosition.z
@@ -375,6 +375,10 @@ Prefab:
     - target: {fileID: 4337539310273348, guid: 058d93db8699d124a8383a2981096b24, type: 2}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1274406873842082, guid: 058d93db8699d124a8383a2981096b24, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 058d93db8699d124a8383a2981096b24, type: 2}
@@ -461,6 +465,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1560058198}
+  - component: {fileID: 1560058199}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -481,6 +486,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1560058199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1560058197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0590d2d51447f554f80578e641d8eb54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PinPrefab: {fileID: 1274406873842082, guid: 058d93db8699d124a8383a2981096b24, type: 2}
+  currentPin: {fileID: 0}
 --- !u!1 &1885237183
 GameObject:
   m_ObjectHideFlags: 0
